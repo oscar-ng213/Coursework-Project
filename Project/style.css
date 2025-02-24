@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue; 
+    color: rgb(0, 0, 0);
+    display: flex;
+    color:black;
+}
+
+nav {
+    width: 36vh;
+    height: 100vh;
+    background-color: rgb(255, 203, 169);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+ #navbar__logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(10, 135, 10);
+    text-decoration: none;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 0;
+    padding: 20px;
+    background-color: rgb(250, 153, 18);
+    background-image: linear-gradient(to bottom right, rgb(26, 176, 21), yellow);
+}
+
+.navbar__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navbar__item {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar__links {
+    display: block;
+    padding: 12px;
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar__links:hover {
+    background-color: gray; 
+    color: white;
+}
+
+.main {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    padding: 10px; 
+    background-color: lightcyan;
+    border-bottom: 2px solid darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border: 5px solid darkblue;
+    width: 100%;
+}
+
+.sec1 {
+    font-size: 3vh;
+    margin: 5%;
+}
+
+.sec2 {
+    margin: 0;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.highlight {
+    padding-left: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.image {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-size: 7vh;
+}

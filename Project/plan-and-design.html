@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursework Report: Plan and Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar__container">
+            <a id="navbar__logo">Coursework Report: Global Warming</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links"> Introduction </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="meeting-the-brief.html" class="navbar__links"> Video  </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="investigation.html" class="navbar__links"> Investigation </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="plan-and-design.html" class="navbar__links"> Plan/Design </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="create.html" class="navbar__links"> Create </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="evaluation.html" class="navbar__links"> Evaluation </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="references.html" class="navbar__links"> References </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="word-count.html" class="navbar__links"> Word Count </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <header class="header">Plan and Design</header>
+        <section class="sec1">
+            <br>
+            <h2>General outine of steps</h2>
+            <br>
+            <p>I want to create an interactive information system that offers the user insights into the trends of global temperature: </p>
+            <div class="highlight">
+                <br>
+                <ol>
+                    <li>Run my selected, dirty dataframe through cleaning program theCleaningPart.py </li>
+                    <li>Using the output, create a new, clean dataframe (.to_csv) and call it cleanDF.CSV </li>
+                    <li>In another python program, print welcome and functions description page then asks user for a function to run </li>
+                    <li>Ask the user for what countr(ies) and year(s) </li>
+                    <li>Analyse cleanDF.CSV and displays the visualisation and graph </li>
+                    <li>Ask if user would like to take a poll </li>
+                    <li>If yes, store the poll information on database </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="sec1">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Description</th>
+                    <th>Processes</th>
+                </tr>
+                <tr>
+                    <td>BR1</td>
+                    <td>
+                        <p>(1a)Download from kaggle.com</p>
+                        <p>(1b)Thonny for cleaning</p>                    
+                    </td>
+                    <td>
+                        <p>import pandas (.read_csv() .loc, .dropna, ... .to_csv())</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BR2</td>
+                    <td>
+                        <p>Pandas, matplotlib.pyplot as plt, maybe numpy</p>
+                        <p>Set each visualisation type as a designated function()</p>
+                    </td>
+                    <td>
+                        <p>(2a,c)filter using .loc, .mean(), for loops ... to gather data from CSV and save to data structures</p>
+                        <p>(2a)plt.plot()</p>
+                        <p>(2a)plt.bar()</p>
+                        <p>(2a)plt.pie()</p>
+                        <p>(2b)plt.title(f'temperature from {yearFrom} to {yearTo}')</p>
+                        <p>(2b)plt.xlabel('Year')</p>
+                        <p>(2b)plt.legend(title='Countries')</p>
+                        <p>(2c)listOfCountry = []</p>
+                        <p>(2c)listOfYears = []</p>
+                        <p>(2c)countryMean = {}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BR3</td>
+                    <td>
+                        <p>...</p>
+                    </td>
+                    <td>
+                        <p>...</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AR1</td>
+                    <td>
+                        <p>...</p>
+                    </td>
+                    <td>
+                        <p>...</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AR2</td>
+                    <td>
+                        <p>...</p>
+                    </td>
+                    <td>
+                        <p>...</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AR3</td>
+                    <td>
+                        <p>Check if ‘Critical tolerance thresholds for agriculture and health’ is reached; >2C increase over a decade </p>
+                    </td>
+                    <td>
+                        <p>Import numpy </p>
+                        <p>Setup linear regression formula </p>
+                        <p>Use Python numeric operators </p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+        <section class="sec1">
+            <table>
+                <tr>
+                    <th style="width:fit-content"></th>
+                    <th style="width: 25%">Pros</th>
+                    <th style="width: 10%">Cons</th>
+                    <th>Purposes</th>
+                </tr>
+                <tr>
+                    <td>Thonny</td>
+                    <td>
+                        <p>Simple and effective python IDE  for beginners </p>
+                        <p>Have most experience</p>
+                    </td>
+                    <td>
+                        <p>Limited features</p>
+                        <p>No code completion</p>
+                        <p>Can be glitchy sometimes</p>
+                    </td>
+                    <td>
+                        <p>Bulk of the code</p>
+                        <p>Clean dirty DF</p>
+                        <p>Store clean DF</p>
+                        <p>Do analyses on cleanDF</p>
+                        <p>Display graph/visualisation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Replit</td>
+                    <td>
+                        <p>Cloud-based</p>
+                        <p>Have some experience</p>
+                    </td>
+                    <td>
+                        <p>Stingy subscription (limited to 3 projects at a time, limited versions/backups)</p>
+                    </td>
+                    <td>
+                        <p>Build web-based interface</p>
+                        <p>Build HTML, CSS and Javascript</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>VSCode</td>
+                    <td>
+                        <p>All-rounder (myriad features)</p>
+                        <p>Code completion</p>
+                        <p>Able to work with different programs simultaneously</p>
+                    </td>
+                    <td>
+                        <p>Difficult to setup</p>
+                        <p>Some features may be complex</p>
+                    </td>
+                    <td>
+                        <p>Comprehensive workplace</p>
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Streamlit</td>
+                    <td>
+                        <p>Great compatibility with python</p>
+                    </td>
+                    <td>
+                        <p>Somewhat difficult to setup</p>
+                        <p>Difficulties with integrating javascript (AR2)</p>
+                    </td>
+                    <td>
+                        <p>Present python file as web-based interface</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>W3schools.com</td>
+                    <td>
+                        <p>Great for learning and looking up fundamental codes</p>
+                    </td>
+                    <td>
+                        <p>Can only be used to troubleshoot simple problems</p>
+                    </td>
+                    <td>
+                        <p>HTML and CSS Template</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>matplotlib.org</td>
+                    <td>
+                        <p>Loads of template for plotting many types of graphs</p>
+                    </td>
+                    <td>
+                        <p>Some are too complex</p>
+                    </td>
+                    <td>
+                        <p>Graph command template</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Excel</td>
+                    <td>
+                        <p>Easy and intuitive to use</p>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <p>Perform quick statistical analyses for quick check during testing</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><s>Notepad</s></td>
+                    <td>
+                        <p><s>Very basic and easy to use</s></p>
+                    </td>
+                    <td>
+                        <p><s>Too basic, doesn't have calculation</s></p>
+                        <p><s>Poor UI</s></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Canva.com</td>
+                    <td>
+                        <p>Cloud-based</p>
+                    <td></td>
+                    <td>
+                        <p>Store screenshots (evidence) to keep record</p></td>
+                    </td>
+                </tr>
+            </div>
+            <br>
+            <h2>Evaluation</h2>
+            <div class="highlight">
+                <p>I will definitely use Thonny, W3schools, Excel and Canva.</p>
+                <p>I will not use Notepad as Excel is much better alternative in I think all aspects</p>
+                <p>I may use replit and/or streamlit to present my web-based interface</p>
+            </div>
+        </section>
